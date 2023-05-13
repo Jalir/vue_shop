@@ -4,7 +4,7 @@
 ```
 npm install
 ```
-啊是你的空间阿森纳打开 
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
