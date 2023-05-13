@@ -1,28 +1,37 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HeaderNav></HeaderNav>
+    <HeaderSearch></HeaderSearch>
+    <router-view></router-view>
+    <FooterSection></FooterSection>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderNav from '@/components/HeaderNav/HeaderNav'
+import FooterSection from '@/components/FooterSection/FooterSection'
+import HeaderSearch from '@/components/HeaderSearch/HeaderSearch'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderSearch,
+    FooterSection,
+    HeaderNav
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped lang="less">
+
+.goods-menu-hover-list {
+  position: sticky;
+  top: 0;
+  left: 210px;
+  width: 800px;
+  height: 490px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
 }
+
 </style>
