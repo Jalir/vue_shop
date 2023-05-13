@@ -2,6 +2,7 @@
   <div id="app">
     <HeaderNav></HeaderNav>
     <HeaderSearch></HeaderSearch>
+
     <router-view></router-view>
     <FooterSection></FooterSection>
   </div>
