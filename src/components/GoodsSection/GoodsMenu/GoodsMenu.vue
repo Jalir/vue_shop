@@ -7,12 +7,10 @@
           <a :data-categoryName="item['categoryName']">{{ item['categoryName'] }}</a>
           <div class="goods-menu-hover-list" ref="menuListHoverList">
             <div class="cate-part-col1">
-
               <div class="cate_channel">
                 <a class="cate_channel_lk">家电馆 ></a>
                 <a class="cate_channel_lk">开店设备一体化 ></a>
               </div>
-
               <div class="cate_detail">
                 <div class="cate_detail_item" v-for="child in item['categoryChild']" :key="child['categoryId']">
                   <dt class="cate_detail_tit">
