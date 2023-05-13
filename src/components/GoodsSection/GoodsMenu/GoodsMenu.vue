@@ -10,8 +10,7 @@
               <div class="cate_channel">
                 <a class="cate_channel_lk">家电馆 ></a>
                 <a class="cate_channel_lk">开店设备一体化 ></a>
-              </div>
-              <div class="cate_detail">
+              </div>git branch -M main<div class="cate_detail">
                 <div class="cate_detail_item" v-for="child in item['categoryChild']" :key="child['categoryId']">
                   <dt class="cate_detail_tit">
                     <a class="cate_detail_tit_lk" :data-categoryName="child['categoryName']">
