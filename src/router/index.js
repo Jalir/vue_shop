@@ -5,7 +5,6 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    // component: () => import('../components/HeaderNav/HeaderNav')
     component: () => import('../pages/InnerPage')
   },
   {
